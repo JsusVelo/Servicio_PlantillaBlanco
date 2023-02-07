@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CEDES-VHS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1173082/reset.css'>
+<link rel="stylesheet" href="estilos.css">
+
+<link rel="stylesheet" type="text/css" href="ACss/Menu.css">
+
+<script src="/script.js" defer></script>
+</head>
+<body>
+
+
+		
+	<div class="navigation">
+		<ul>
+			<li class="list ">
+				<a href="index.html">
+					<span class="icon">
+						<ion-icon name="home-outline"></ion-icon>
+					</span>
+					<span class="text">Home</span>
+				</a>
+			</li>
+
+			<li class="list ">
+				<a href="Publicaciones.html">
+					<span class="icon">
+						<ion-icon name="newspaper-outline"></ion-icon>
+					</span>
+					<span class="text">Publicaciones</span>
+				</a>
+			</li>
+			
+			<li class="list active">
+				<a href="videos.html">
+					<span class="icon">
+						<ion-icon name="videocam-outline"></ion-icon>
+
+					</span>
+					<span class="text">Cursos</span>
+				</a>
+			</li>
+
+			<li class="list ">
+				<a href="contacto.html">
+					<span class="icon">
+						<ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+					</span>
+					<span class="text">Contacto</span>
+				</a>
+			</li>
+
+
+			<div class="indicator"></div>
+		</ul>
+	</div>
+
+
+<!--inico del cuerpo-->
+
+
+<section id="about-home"></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer></footer>  <!-- Este footer a diferencia del footer2 controla el  recuardro azul para tapar y darle espacio para cuando vayan al fondo de la pantalla  -->
+
+<!-- Este es codigo no lo modifiquen es para que al momento de sellecionar un apartado del menu este haga una animacion de desliz-->
+<script>
+	$("#menu-btn").click(function () {
+		$("nav .navigation ul").addClass("active");
+	});
+	$("#menu-close").click(function () {
+		$("nav .navigation ul").removeClass("active");
+	});
+</script>
+
+
+
+<!--  Este codigo es para el widget USERWAY -->
+<script>(function (d) { var s = d.createElement("script"); s.setAttribute("data-account", "nfR7oRVWFN"); s.setAttribute("src", "https://cdn.userway.org/widget.js"); (d.body || d.head).appendChild(s); })(document)</script>
+<noscript><a href="https://userway.org"></a></noscript>
+
+
+
+
+		
+<!--  NO MODIFICAR ESTE CODIGO YA QUE ES PARTE DEL PWA  -->
+<script src="/regist_serviceWorker.js"></script>
+<script>
+	$(function () {
+		//Precarga de la pagina se ejecuta solo una vez
+		setTimeout(
+			() => {
+				$(".cargando").hide();
+			}, 50
+		);
+	});
+</script>
+
+
+
+<!--Este es un enlace para conectar los iconos del menu -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>

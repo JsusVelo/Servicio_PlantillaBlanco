@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CEDES-VHS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1173082/reset.css'>
+
+
+	<link rel="stylesheet" href="estilos.css">
+
+	<link rel="stylesheet" href="/ACss/indexestilo.css"><!--  Aqui va-->
+	
+	<link rel="stylesheet" type="text/css" href="ACss/Menu.css">  <!--ESTA CSS ES UNICAMENRTE PARA EL MENU-->
+	
+
+
+
+ <!--PWA-->
+ <!--AQUI SOLO CAMBIEN LAS IMAGENES POR LAS QUE USTEDES OCUPARAN CON LAS MISMAS DIMENCIONES Y MISMO NOMBRE-->
+ <meta name="theme-color" content="#2F3BA2">
+ <meta name="MobileOptimized" content="width">
+ <meta name="HandheldFriendly" content="true">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <link rel="apple-touch-icon" href="/pwa/images/icons/icon-72x72.png" />
+ <link rel="apple-touch-icon" href="/pwa/images/icons/icon-96x96.png" />
+ <link rel="apple-touch-icon" href="/pwa/images/icons/icon-128x128.png" />
+ <link rel="apple-touch-icon" href="/pwa/images/icons/icon-144x144.png" />
+ <link rel="apple-touch-icon" href="/pwa/images/icons/icon-152x152.png" />
+ <link rel="apple-touch-icon" href="/pwa/images/icons/icon-192x192.png" />
+ <link rel="apple-touch-icon" href="/pwa/images/icons/icon-384x384.png" />
+ <link rel="apple-touch-icon" href="/pwa/images/icons/icon-512x512.png" />
+ <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+ <link rel="manifest" href="/manifest.json"> 
+ <!--PWA-->
+</head>
+
+<body>
+
+
+
+	<section id="about-home"></section>  <!--Esto es la imagen que esta de encabezado-->
+
+
+
+<!--Inicio del menu-->
+	<div class="navigation">
+		<ul>
+			
+			<li class="list active">  <!--List active es para activar el reecuadro en donde se encuentra en el menu *Revisen las otras pantallas para que entiendad mejor*-->
+				<a href="index.html">
+					<span class="icon">
+						<ion-icon name="home-outline"></ion-icon>
+					</span>
+					<span class="text">Home</span>
+				</a>
+			</li>
+
+
+			<li class="list ">
+				<a href="Publicaciones.html">
+					<span class="icon">
+						<ion-icon name="newspaper-outline"></ion-icon>
+					</span>
+					<span class="text">Publicaciones</span>
+				</a>
+			</li>
+
+
+
+			<li class="list">
+				<a href="videos.html">
+					<span class="icon">
+						<ion-icon name="videocam-outline"></ion-icon>
+
+					</span>
+					<span class="text">Cursos</span>
+				</a>
+			</li>
+
+
+			<li class="list">
+				<a href="contacto.html">
+					<span class="icon">
+						<ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+					</span>
+					<span class="text">Contacto</span>
+				</a>
+			</li>
+
+
+			<div class="indicator"></div>
+		</ul>
+	</div>
+<!--Termina el menu-->
+
+
+
+	<footer2></footer2> <!--Esto es para darle un espacio blanco entre los cuadros -->
+
+<!--Inicio del cuadro-->
+	<div class="post" >
+		<div class="img" > <img src="/images/Contrapartes/lunach.jpg" alt="" ></div>   <!--Ruta de la imagen-->
+		<div class="info">
+			<h1 class="titulo">UNIVERSIDAD AUTÓNOMA DE CHIAPAS</h1>
+			<a class="blue" href="/universidades/unach/unach.html">Saber más</a>  <!--Ruta de hacia a donde va dirigido el boton-->
+				</div>
+			</div>
+		</div>
+	</div>
+<!--Termino del cuadro-->
+
+	<footer2></footer2>   <!--Esto es para darle un espacio blanco entre los cuadros -->
+
+<!--Ejmplo segundo cuiadro-->
+<div class="post" >
+	
+	<div class="img" > <img src="images/Contrapartes/ldvv.jpg"  alt="" ></div>
+	<div class="info">
+		<h1 class="titulo">DVV-international</h1>
+		<a class="blue" href="">Saber más</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Termino del ejemplo-->
+
+
+
+<!--Esto son para las imagenes de alidos y contrapartes del final-->
+	<section id="trust">
+		<div class="trust-images">
+			<a class="" href="https://dvv-international.mx"><img src="/images/logovhs.png" alt=""></a>
+			<a class="" href="http://www.iximantsetic.org.mx/"><img src="/images/logocasadelamujer.png" alt=""></a>
+			<a class="" href="https://vocesmesoamericanas.org/"><img src="/images/logovoces.png" alt=""></a>
+			<a class="" href="http://www.pronatura-sur.org/web/"><img src="/images/logoprona.jpg" alt=""></a>
+			<a class="" href="http://moxviquil.org"><img src="/images/logomox.png" alt=""></a>
+			<a class="" href="https://www.cedes.unach.mx/"><img src="/images/logocedes.png" alt=""></a>
+			<a class="" href="https://www.unach.mx/"><img src="/images/logounach.png" alt=""></a>
+		</div>
+	</section>
+
+
+
+
+
+
+
+	<footer></footer>  <!-- Este footer a diferencia del footer2 controla el  recuardro azul para tapar y darle espacio para cuando vayan al fondo de la pantalla  -->
+
+	<!-- Este es codigo no lo modifiquen es para que al momento de sellecionar un apartado del menu este haga una animacion de desliz-->
+	<script>
+		$("#menu-btn").click(function () {
+			$("nav .navigation ul").addClass("active");
+		});
+		$("#menu-close").click(function () {
+			$("nav .navigation ul").removeClass("active");
+		});
+	</script>
+
+
+
+<!--  Este codigo es para el widget USERWAY -->
+	<script>(function (d) { var s = d.createElement("script"); s.setAttribute("data-account", "nfR7oRVWFN"); s.setAttribute("src", "https://cdn.userway.org/widget.js"); (d.body || d.head).appendChild(s); })(document)</script>
+	<noscript><a href="https://userway.org"></a></noscript>
+
+
+
+
+			
+<!--  NO MODIFICAR ESTE CODIGO YA QUE ES PARTE DEL PWA  -->
+	<script src="/regist_serviceWorker.js"></script>
+	<script>
+		$(function () {
+			//Precarga de la pagina se ejecuta solo una vez
+			setTimeout(
+				() => {
+					$(".cargando").hide();
+				}, 50
+			);
+		});
+	</script>
+
+
+
+<!--Este es un enlace para conectar los iconos del menu -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>

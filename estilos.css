@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+footer {
+    margin-top: 8vw;
+    padding: 5vw;
+   background-color: #151564;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+/* ESTA ES PARA LA IMAGEN DE ENCABEZADO*/
+#about-home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("images/fondotodas.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 12vh;
+    padding-top: 100px;
+}
+/* ES PARA LAS IMAGENES DEL FONDO DE LOS ALIADOS*/
+#trust {
+    text-align: center;
+    padding: 8vw 8vw 0 8vw;
+}
+
+#trust .trust-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#trust .trust-images img {
+    width: 90px;
+    height: auto;
+}
+
+
+
+
+/* TODO LO SIGUIENTE ES EL MISMO CODIGO DE ARRIBA PERO ES PARA QUE SE ADAPTE BIEN A TODO TIPO DE DIMENSIONES*/
+
+
+@media (max-width:1040px) {
+
+   
+
+
+    footer .pro-link {
+        margin-top: 15px;
+    }
+  
+    #about-container {
+        padding: 8vw 4vw 2vw 4vw;
+    }
+    #about-container .about-img {
+        padding-right: 30px;
+    }
+    #trust .trust-images img {
+        width: 50px;
+        height: auto;
+    }
+   
+   
+
+
+
+}
+
+@media (max-width: 475px) {
+  
+    footer input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+   
+    #trust {
+        text-align: center;
+        padding: 8vw 4vw 0 4vw;
+    }
+    #trust .trust-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    #trust .trust-images img {
+        width: 60px;
+        margin: 10px 15px;
+        height: auto;
+    }
+  
+}

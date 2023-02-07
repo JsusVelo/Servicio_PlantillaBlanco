@@ -1,0 +1,96 @@
+
+:root 
+{
+	--clr: #ffffff;
+}
+
+.navigation 
+{
+z-index: 100;
+	position: fixed;
+	width: 100%;
+	height: -100%;
+	top: 91%;
+	background: #151564;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: 1px -1px 3px 0.1px #151564;
+}
+.navigation ul 
+{
+	display: flex;
+	width: 350px;
+}
+.navigation ul li 
+{
+	position: relative;
+	list-style: none;
+	width: 50%;
+	height: 600px;
+	z-index: 2;
+}
+.navigation ul li a 
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	text-align: center;
+	font-weight: 500;
+}
+.navigation ul li a .icon 
+{
+	position: relative;
+	display: block;
+	line-height: 65px;
+	font-size: 1.5em;
+	text-align: center;
+	transition: 0.5s;
+	color: var(--clr);
+}
+
+.navigation ul li.active a .icon 
+{
+	transform: translateY(-10px);
+	color: #2196f3;
+}
+.navigation ul li a .text 
+{
+	position: absolute;
+	background: #2196f3;
+	color: #fff;
+	padding: 2px 7px;
+	border-radius: 12px;
+	font-weight: 400;
+	font-size: 0.75em;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+	opacity: 0;
+	transform: translateY(15px);
+}
+.navigation ul li.active a .text 
+{
+	transform: translateY(10px);
+	opacity: 1;
+}
+.indicator 
+{
+	position: absolute;
+	top: 1px;
+	width: 70px;
+	height: 70px;
+	background: #151564;
+	border-radius: 50%;
+	/* border: 6px solid #fff; */
+	transition: 0.5s;
+	z-index: 1;
+}
+
+
+
+
+
